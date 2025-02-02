@@ -26,7 +26,7 @@ pipeline {
                 sh './jenkins/scripts/kill.sh'
             }
         }
-        stage('Deploy for production') {
+        stage('Deploy for prod') {
             when {
                 branch 'prod'  
             }
