@@ -1,6 +1,9 @@
 
 
 pipeline {
+    triggers {
+        githubPush() // Automatically triggers builds on GitHub push
+    }
     agent any
     environment {
         CI = 'true'
